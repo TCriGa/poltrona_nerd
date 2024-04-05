@@ -5,4 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository
 
 
 interface HamburguerRepository : JpaRepository<HamburguerModel, Int> {
+    fun findByNameContains(name: String): List<HamburguerModel>
 }

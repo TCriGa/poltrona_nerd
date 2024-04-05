@@ -11,6 +11,9 @@ data class HamburguerModel(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id : Int? = null,
+
+    @Column
+    val name: String,
     @Column
     val typeBrad : String,
     @Column
