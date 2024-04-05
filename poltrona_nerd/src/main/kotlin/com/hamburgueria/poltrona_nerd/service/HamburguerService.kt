@@ -30,7 +30,7 @@ class HamburguerService(
     }
 
     fun deleteHamburguer(id: Int){
-        if (hamburguerRepository.existsById(id)){
+        if (!hamburguerRepository.existsById(id)){
             throw Exception()
         }
         hamburguerRepository.deleteById(id)

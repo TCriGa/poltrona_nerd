@@ -9,7 +9,7 @@ import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping
+@RequestMapping("hamburguer")
 class HamburguerController(
     val hamburguerService: HamburguerService
 ) {
